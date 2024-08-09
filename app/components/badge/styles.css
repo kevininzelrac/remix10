@@ -1,0 +1,12 @@
+div.badge{
+    width: fit-content;
+    height: fit-content;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    background: smokewhite;
+    border: 1px solid gainsboro;
+    border-radius: .3rem;
+}

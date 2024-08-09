@@ -5,6 +5,16 @@ import {
   Scripts,
   ScrollRestoration,
 } from "@remix-run/react";
+import { LinksFunction } from "@remix-run/server-runtime";
+
+import Nav from "./components/nav";
+import navStyles from "./components/nav/styles.css?url";
+import styles from "./styles/index.css?url";
+
+export const links: LinksFunction = () => [
+  { rel: "stylesheet", href: styles },
+  { rel: "stylesheet", href: navStyles },
+];
 
 export function Layout({ children }: { children: React.ReactNode }) {
   return (
@@ -25,5 +35,10 @@ export function Layout({ children }: { children: React.ReactNode }) {
 }
 
 export default function App() {
-  return <Outlet />;
+  return (
+    <>
+    <Nav />
+    <Outlet />
+    </>
+  )
 }

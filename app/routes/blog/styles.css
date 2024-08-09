@@ -1,0 +1,21 @@
+aside{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 1rem;
+}
+
+article {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid gainsboro
+}
+
+article > nav {
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  right: 0;
+}

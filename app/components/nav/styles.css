@@ -1,0 +1,29 @@
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+nav > a {
+    color: darkslategrey;
+    font-weight: bold;
+    text-align: center;
+    padding: 1rem;
+    text-decoration: none;
+    border: 1px solid gainsboro;
+    border-radius: .3rem;
+    min-width: 80px;
+    transition: opacity .3s ease-in-out;
+}
+
+nav > a:hover {
+    opacity: .8;
+}
+
+nav > a.pending {
+    color: crimson;
+}
+nav > a.active {
+    color: darkslateblue;
+}
